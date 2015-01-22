@@ -1,0 +1,34 @@
+ [
+  {
+  "testInt": 33,
+  "testString": "Hello"
+  },
+  "Hello World",
+  123456789,
+  12345.6789,
+  {
+  "testDouble": 45.66,
+  "testLong": 99885432
+  },
+  [
+   "abcdefg",
+   "123456789"
+   ],
+  [
+   999999,
+   888888,
+   777777
+   ],
+  [
+   {
+   "name": "fanty",
+   "sex": 1,
+   "country": "China"
+   },
+   {
+   "name": "XXM",
+   "sex": 2,
+   "country": "USA"
+   }
+   ]
+  ]

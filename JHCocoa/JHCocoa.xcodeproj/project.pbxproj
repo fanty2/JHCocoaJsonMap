@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		394151DA1A64FBAC00AB1C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 394151D91A64FBAC00AB1C39 /* main.m */; };
+		394151E41A64FE2700AB1C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394151E31A64FE2700AB1C39 /* Foundation.framework */; };
+		394151ED1A6501B200AB1C39 /* JHUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 394151EC1A6501B200AB1C39 /* JHUpdate.m */; };
+		394151F11A65104400AB1C39 /* JHUModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 394151F01A65104400AB1C39 /* JHUModel.m */; };
+		39550BE01A6650FA009D12FD /* JHUClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39550BDF1A6650FA009D12FD /* JHUClassModel.m */; };
+		399A38731A660C70005AFAE7 /* ChamleonDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A38691A660C70005AFAE7 /* ChamleonDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		399A38741A660C70005AFAE7 /* ChamleonDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A386B1A660C70005AFAE7 /* ChamleonDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		399A38751A660C70005AFAE7 /* ChamleonFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A386D1A660C70005AFAE7 /* ChamleonFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		399A38761A660C70005AFAE7 /* ChamleonHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A386F1A660C70005AFAE7 /* ChamleonHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		399A38771A660C70005AFAE7 /* ChamleonInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A38721A660C70005AFAE7 /* ChamleonInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		399A38851A660E2B005AFAE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399A38841A660E2B005AFAE7 /* CFNetwork.framework */; };
+		399A38871A660E31005AFAE7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 399A38861A660E31005AFAE7 /* libz.1.2.5.dylib */; };
+		399A388A1A661879005AFAE7 /* JHClassParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A38891A661879005AFAE7 /* JHClassParser.m */; };
+		39A8CFE31A7098B2007477E1 /* JHParserWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8CFE21A7098B2007477E1 /* JHParserWriter.m */; };
+		39A8D0541A70F1FB007477E1 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D0531A70F1FB007477E1 /* JSONParser.m */; };
+		39B85E331A679E7200E17F1C /* JHClassWriterDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B85E321A679E7200E17F1C /* JHClassWriterDictionary.m */; };
+		39B85E361A679F0700E17F1C /* JHClassWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B85E351A679F0700E17F1C /* JHClassWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		394151D41A64FBAC00AB1C39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		394151D61A64FBAC00AB1C39 /* JHCocoa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JHCocoa; sourceTree = BUILT_PRODUCTS_DIR; };
+		394151D91A64FBAC00AB1C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		394151E31A64FE2700AB1C39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		394151EB1A6501B200AB1C39 /* JHUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpdate.h; sourceTree = "<group>"; };
+		394151EC1A6501B200AB1C39 /* JHUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpdate.m; sourceTree = "<group>"; };
+		394151EF1A65104400AB1C39 /* JHUModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUModel.h; sourceTree = "<group>"; };
+		394151F01A65104400AB1C39 /* JHUModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUModel.m; sourceTree = "<group>"; };
+		39550BDE1A6650FA009D12FD /* JHUClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUClassModel.h; sourceTree = "<group>"; };
+		39550BDF1A6650FA009D12FD /* JHUClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUClassModel.m; sourceTree = "<group>"; };
+		399A38681A660C70005AFAE7 /* ChamleonDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonDataCompressor.h; sourceTree = "<group>"; };
+		399A38691A660C70005AFAE7 /* ChamleonDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChamleonDataCompressor.m; sourceTree = "<group>"; };
+		399A386A1A660C70005AFAE7 /* ChamleonDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonDataDecompressor.h; sourceTree = "<group>"; };
+		399A386B1A660C70005AFAE7 /* ChamleonDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChamleonDataDecompressor.m; sourceTree = "<group>"; };
+		399A386C1A660C70005AFAE7 /* ChamleonFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonFormDataRequest.h; sourceTree = "<group>"; };
+		399A386D1A660C70005AFAE7 /* ChamleonFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChamleonFormDataRequest.m; sourceTree = "<group>"; };
+		399A386E1A660C70005AFAE7 /* ChamleonHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonHTTPRequest.h; sourceTree = "<group>"; };
+		399A386F1A660C70005AFAE7 /* ChamleonHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChamleonHTTPRequest.m; sourceTree = "<group>"; };
+		399A38701A660C70005AFAE7 /* ChamleonHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		399A38711A660C70005AFAE7 /* ChamleonInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChamleonInputStream.h; sourceTree = "<group>"; };
+		399A38721A660C70005AFAE7 /* ChamleonInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChamleonInputStream.m; sourceTree = "<group>"; };
+		399A38841A660E2B005AFAE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		399A38861A660E31005AFAE7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		399A38881A661879005AFAE7 /* JHClassParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassParser.h; sourceTree = "<group>"; };
+		399A38891A661879005AFAE7 /* JHClassParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHClassParser.m; sourceTree = "<group>"; };
+		39A8CFE11A7098B2007477E1 /* JHParserWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHParserWriter.h; sourceTree = "<group>"; };
+		39A8CFE21A7098B2007477E1 /* JHParserWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHParserWriter.m; sourceTree = "<group>"; };
+		39A8D0521A70F1FB007477E1 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		39A8D0531A70F1FB007477E1 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		39B85E311A679E7200E17F1C /* JHClassWriterDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassWriterDictionary.h; sourceTree = "<group>"; };
+		39B85E321A679E7200E17F1C /* JHClassWriterDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHClassWriterDictionary.m; sourceTree = "<group>"; };
+		39B85E341A679F0700E17F1C /* JHClassWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassWriter.h; sourceTree = "<group>"; };
+		39B85E351A679F0700E17F1C /* JHClassWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHClassWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		394151D31A64FBAC00AB1C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399A38871A660E31005AFAE7 /* libz.1.2.5.dylib in Frameworks */,
+				399A38851A660E2B005AFAE7 /* CFNetwork.framework in Frameworks */,
+				394151E41A64FE2700AB1C39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		394151CD1A64FBAC00AB1C39 = {
+			isa = PBXGroup;
+			children = (
+				39A8D0511A70F1FB007477E1 /* JSONLibrary */,
+				399A38861A660E31005AFAE7 /* libz.1.2.5.dylib */,
+				399A38841A660E2B005AFAE7 /* CFNetwork.framework */,
+				394151E31A64FE2700AB1C39 /* Foundation.framework */,
+				394151D81A64FBAC00AB1C39 /* JHCocoa */,
+				394151D71A64FBAC00AB1C39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		394151D71A64FBAC00AB1C39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				394151D61A64FBAC00AB1C39 /* JHCocoa */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		394151D81A64FBAC00AB1C39 /* JHCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				394151F41A651C0100AB1C39 /* Library */,
+				394151EE1A65103600AB1C39 /* model */,
+				394151D91A64FBAC00AB1C39 /* main.m */,
+				394151EB1A6501B200AB1C39 /* JHUpdate.h */,
+				394151EC1A6501B200AB1C39 /* JHUpdate.m */,
+				399A38881A661879005AFAE7 /* JHClassParser.h */,
+				399A38891A661879005AFAE7 /* JHClassParser.m */,
+				39B85E341A679F0700E17F1C /* JHClassWriter.h */,
+				39B85E351A679F0700E17F1C /* JHClassWriter.m */,
+				39A8CFE11A7098B2007477E1 /* JHParserWriter.h */,
+				39A8CFE21A7098B2007477E1 /* JHParserWriter.m */,
+			);
+			path = JHCocoa;
+			sourceTree = "<group>";
+		};
+		394151EE1A65103600AB1C39 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				394151EF1A65104400AB1C39 /* JHUModel.h */,
+				394151F01A65104400AB1C39 /* JHUModel.m */,
+				39550BDE1A6650FA009D12FD /* JHUClassModel.h */,
+				39550BDF1A6650FA009D12FD /* JHUClassModel.m */,
+				39B85E311A679E7200E17F1C /* JHClassWriterDictionary.h */,
+				39B85E321A679E7200E17F1C /* JHClassWriterDictionary.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		394151F41A651C0100AB1C39 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				399A38681A660C70005AFAE7 /* ChamleonDataCompressor.h */,
+				399A38691A660C70005AFAE7 /* ChamleonDataCompressor.m */,
+				399A386A1A660C70005AFAE7 /* ChamleonDataDecompressor.h */,
+				399A386B1A660C70005AFAE7 /* ChamleonDataDecompressor.m */,
+				399A386C1A660C70005AFAE7 /* ChamleonFormDataRequest.h */,
+				399A386D1A660C70005AFAE7 /* ChamleonFormDataRequest.m */,
+				399A386E1A660C70005AFAE7 /* ChamleonHTTPRequest.h */,
+				399A386F1A660C70005AFAE7 /* ChamleonHTTPRequest.m */,
+				399A38701A660C70005AFAE7 /* ChamleonHTTPRequestDelegate.h */,
+				399A38711A660C70005AFAE7 /* ChamleonInputStream.h */,
+				399A38721A660C70005AFAE7 /* ChamleonInputStream.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		39A8D0511A70F1FB007477E1 /* JSONLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				39A8D0521A70F1FB007477E1 /* JSONParser.h */,
+				39A8D0531A70F1FB007477E1 /* JSONParser.m */,
+			);
+			path = JSONLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		394151D51A64FBAC00AB1C39 /* JHCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394151DD1A64FBAC00AB1C39 /* Build configuration list for PBXNativeTarget "JHCocoa" */;
+			buildPhases = (
+				394151D21A64FBAC00AB1C39 /* Sources */,
+				394151D31A64FBAC00AB1C39 /* Frameworks */,
+				394151D41A64FBAC00AB1C39 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHCocoa;
+			productName = JHCocoa;
+			productReference = 394151D61A64FBAC00AB1C39 /* JHCocoa */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		394151CE1A64FBAC00AB1C39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Fanty;
+				TargetAttributes = {
+					394151D51A64FBAC00AB1C39 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 394151D11A64FBAC00AB1C39 /* Build configuration list for PBXProject "JHCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 394151CD1A64FBAC00AB1C39;
+			productRefGroup = 394151D71A64FBAC00AB1C39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				394151D51A64FBAC00AB1C39 /* JHCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		394151D21A64FBAC00AB1C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A8D0541A70F1FB007477E1 /* JSONParser.m in Sources */,
+				39B85E331A679E7200E17F1C /* JHClassWriterDictionary.m in Sources */,
+				39550BE01A6650FA009D12FD /* JHUClassModel.m in Sources */,
+				394151ED1A6501B200AB1C39 /* JHUpdate.m in Sources */,
+				399A38741A660C70005AFAE7 /* ChamleonDataDecompressor.m in Sources */,
+				399A38761A660C70005AFAE7 /* ChamleonHTTPRequest.m in Sources */,
+				399A38771A660C70005AFAE7 /* ChamleonInputStream.m in Sources */,
+				399A38751A660C70005AFAE7 /* ChamleonFormDataRequest.m in Sources */,
+				39A8CFE31A7098B2007477E1 /* JHParserWriter.m in Sources */,
+				399A38731A660C70005AFAE7 /* ChamleonDataCompressor.m in Sources */,
+				394151F11A65104400AB1C39 /* JHUModel.m in Sources */,
+				394151DA1A64FBAC00AB1C39 /* main.m in Sources */,
+				399A388A1A661879005AFAE7 /* JHClassParser.m in Sources */,
+				39B85E361A679F0700E17F1C /* JHClassWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		394151DB1A64FBAC00AB1C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		394151DC1A64FBAC00AB1C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		394151DE1A64FBAC00AB1C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		394151DF1A64FBAC00AB1C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		394151D11A64FBAC00AB1C39 /* Build configuration list for PBXProject "JHCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394151DB1A64FBAC00AB1C39 /* Debug */,
+				394151DC1A64FBAC00AB1C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		394151DD1A64FBAC00AB1C39 /* Build configuration list for PBXNativeTarget "JHCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394151DE1A64FBAC00AB1C39 /* Debug */,
+				394151DF1A64FBAC00AB1C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 394151CE1A64FBAC00AB1C39 /* Project object */;
+}

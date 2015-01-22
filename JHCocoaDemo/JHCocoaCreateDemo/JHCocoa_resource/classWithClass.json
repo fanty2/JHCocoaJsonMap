@@ -1,0 +1,46 @@
+{
+    "testString": "Hello World",
+    "testInt": 550,
+    "testFloat": 43.994,
+    "testDouble": 98000.4455566544,
+    "testLongLong": 13432323401,
+    "Account": {
+        "name": "fanty",
+        "sex": 1,
+        "country": "China",
+        "schools": [
+            "school one",
+            "school two",
+            "school three"
+        ],
+        "wife": {
+            "name": "XXM",
+            "sex": 0,
+            "country": "USA"
+        },
+        "father": {
+            "name": "XXA",
+            "sex": 0,
+            "country": "USA"
+        },
+        "brother": {
+            "name": "XXA",
+            "sex": 0,
+            "country": "USA",
+           "dict":"bbs"
+        },
+       "sister": {
+            "name": "XXA",
+            "sex": 0,
+            "country": "USA",
+           "dict":99
+        }
+    },
+    "Friends": [
+        "Hun",
+        "Chris",
+        "Peng",
+        "Sean"
+    ]
+}
+
