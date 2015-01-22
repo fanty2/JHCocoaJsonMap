@@ -21,12 +21,12 @@ JHCocoaCreateDemo：  通过配置json 文件，生成对应的模型类文件 �
 JHCocoaParserDemo：  简单的测试项目。  
 
 示例项目使用指南：  
-1,打开终端，执行命令：cd {你的项目目录}/JHCocoaDemo/JHCocoaCreateDemo/  
-2,执行命令：JHCocoa -version,   可以查看版本号  
-3，执行命令：JHCocoa -update      
+1,打开终端，执行命令：cd {你的项目目录}/JHCocoaDemo/JHCocoaCreateDemo/    
+2,执行命令：./JHCocoa -version,   可以查看版本号    
+3，执行命令：./JHCocoa -update      
 4，当前目录里会生成目录model  以及目录parser  
     
-model 目录：  存放对应的json 的模型类文件  
+model 目录：  存放对应的json 的模型类文件    
 parser 目录： 生成一个JHCocoaParser 类， 生成解析模型的代码，方便快速调用。  
 
 当执行完以上操作后， 打开JHCocoaParserDemo.xcodeproj 工程，工程里的main.m 文件，详细地介绍了如何通过映射的方式，把son data 转化成刚刚生成的Map 模型类。  
@@ -51,7 +51,16 @@ map_url  属性：  指定要转换的son data 的文件路径，暂只能为相
 moduleName  属性： 指定要为json data 生成的对应模型类名  
 method  属性：如果map_url 为http 访问， method 就决定是使用get 方法还是post 方法，默认为get  
     
-  
+#JSONParser 用法
+
+当有一段json data ，然后又生成了对应的模型类后，
+可以调用以下方法：    
+
+JSONParser* parser=[[JSONParser alloc] init];    
+parser.serialModelName=@“模型的类名”;    
+[parser parse:data];    
+return parser.result;      
+    
 由于本人比较懒， 暂没有直接图文讲解，对此十分抱歉， 对于该项目， 我有很多的想法，想做得更便捷，但无奈星火有限，类似能够包含NSCoding or NSCopy， 以及快速生成对应http asihttprequest or afnetworking 之类的应用，我实在无瑕照顾，  更何况还妄想一键生成，嵌入xcodeproj 项目里，实现到类似cocoa pod！ 如果有朋友觉得该项目有价值，能抽空完善不足的地方，实在感激万分！
 
 
