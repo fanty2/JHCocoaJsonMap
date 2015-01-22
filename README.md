@@ -1,5 +1,5 @@
 # JHCocoaJsonMap
-一个mac for ios的命令行程序（能把json 映射成model class 的代码文件，减少大家平日解析json 的工作量）  
+一个mac for ios的命令行程序（能把json 映射成model class 的代码文件，减少大家平日解析json 的工作量），生成的代码支持mac os 以及ios 上运行  
 
 #开发当前功能的原因：
    过去开发iOS的时候，在解析json 的时候，由于iOS 没有映射机制，所以大家都经常将json data 转化成NSDictonary 或者NSArray 来访问，虽然快捷方便， 但对于检校数据的正确性以及程序稳定性来讲，却是一个很大的考验。例如如果一旦服务器修改了一个字段，而且自己没有及时跟进的话，问题就有可能变得严重了。    
