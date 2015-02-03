@@ -24,8 +24,6 @@
 
 #import "JHClassWriter.h"
 
-#import "JHParserWriter.h"
-
 @interface JHUpdate()
 
 //解析json 并生成文件
@@ -130,13 +128,6 @@
         NSLog(@"write root:%@",path);
         [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
     }
-
-    JHParserWriter* parserWriter=[[JHParserWriter alloc] init];
-    [parserWriter writeJHUModelArray:urls inPath:path];
-    
-    
-    
-
     return YES;
 }
 

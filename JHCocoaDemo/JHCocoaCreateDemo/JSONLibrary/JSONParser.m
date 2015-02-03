@@ -263,22 +263,3 @@
 
 @end
 
-
-//T@"NSString",&,N,V_a
-//Td,N,V_b
-//Tq,N,V_c
-//T@"TestModel_1",N,V_d
-//T@"NSArray",&,N,V_e
-
-/*
- @property(nonatomic,strong) NSString* a;
- 
- @property(nonatomic,assign) double b;
- 
- @property(nonatomic,assign) long long c;
- 
- @property(nonatomic,assign)  TestModel_1* d;
- 
- @property(nonatomic,strong)  NSArray* e;
-
- */

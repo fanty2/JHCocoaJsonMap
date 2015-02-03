@@ -33,10 +33,13 @@
         JHUClassModel* classModel=dictionary.classModel;
         if(![writeExistClass containsObject:classModel.className]){
             [writeExistClass addObject:dictionary.classModel.className];
-            [content appendFormat:@"@interface %@ : NSObject\n\n\n",classModel.className];
+            [content appendFormat:@"@interface %@ : NSObject<NSCoding,NSCopying>\n\n\n",classModel.className];
             [classModel.properties enumerateKeysAndObjectsUsingBlock:^(id key,id object,BOOL*stop){
                 [content appendFormat:@"%@ %@;\n\n",object,key];
             }];
+            if([classModel.className isEqualToString:moduleName])
+                [content appendString:@"+(id)parser:(NSData*)data;\n\n"];
+
             [content appendString:@"\n\n@end\n\n"];
 
         }
@@ -52,7 +55,9 @@
     range.length=[content length];
     [content deleteCharactersInRange:range];
     
-    [content appendFormat:@"#import \"%@.h\"\n\n\n\n\n\n",moduleName];
+    [content appendFormat:@"#import \"%@.h\"\n",moduleName];
+    [content appendString:@"#import \"JSONParser.h\"\n\n\n\n\n\n"];
+
     
     [writeExistClass removeAllObjects];
 
@@ -60,7 +65,61 @@
         JHUClassModel* classModel=dictionary.classModel;
         if(![writeExistClass containsObject:classModel.className]){
             [writeExistClass addObject:dictionary.classModel.className];
-            [content appendFormat:@"@implementation %@;\n",dictionary.classModel.className];
+            [content appendFormat:@"@implementation %@;\n\n",dictionary.classModel.className];
+            
+            [content appendString:@"- (void)encodeWithCoder:(NSCoder *)aCoder{\n\n"];
+            
+            [classModel.properties enumerateKeysAndObjectsUsingBlock:^(id key,id object,BOOL*stop){
+                if([object rangeOfString:@"(nonatomic,copy)"].length>0)
+                    [content appendFormat:@"    if(self.%@!=nil) [aCoder encodeObject:self.%@ forKey:@\"%@\"];\n",key,key,key];
+                else if([object rangeOfString:@"(nonatomic,assign) double"].length>0)
+                    [content appendFormat:@"    [aCoder encodeDouble:self.%@ forKey:@\"%@\"];\n",key,key];
+                else
+                    [content appendFormat:@"    [aCoder encodeInt64:self.%@ forKey:@\"%@\"];\n",key,key];
+            }];
+            [content appendString:@"}\n\n"];
+
+            [content appendString:@"- (id)initWithCoder:(NSCoder *)aDecoder{\n\n"];
+            [content appendString:@"    self=[self init];\n"];
+            [content appendString:@"    if(self){\n"];
+            
+            [classModel.properties enumerateKeysAndObjectsUsingBlock:^(id key,id object,BOOL*stop){
+                if([object rangeOfString:@"(nonatomic,copy)"].length>0)
+                    [content appendFormat:@"        self.%@=[aDecoder decodeObjectForKey:@\"%@\"];\n",key,key];
+                else if([object rangeOfString:@"(nonatomic,assign) double"].length>0)
+                    [content appendFormat:@"        self.%@=[aDecoder decodeDoubleForKey:@\"%@\"];\n",key,key];
+                else
+                    [content appendFormat:@"        self.%@=[aDecoder decodeInt64ForKey:@\"%@\"];\n",key,key];
+            }];
+            [content appendString:@"    }\n"];
+            [content appendString:@"    return self;\n"];
+
+
+            [content appendString:@"}\n\n"];
+
+            [content appendString:@"- (id)copyWithZone:(NSZone *)zone{\n\n"];
+            [content appendFormat:@"    %@ *copy = [[[self class] allocWithZone:zone] init];\n",classModel.className];
+            [content appendString:@"    if (copy != nil) {\n"];
+            [classModel.properties enumerateKeysAndObjectsUsingBlock:^(id key,id object,BOOL*stop){
+                [content appendFormat:@"        copy.%@ = self.%@;\n",key,key];
+            }];
+            [content appendString:@"    }\n"];
+
+            [content appendString:@"    return copy;\n"];
+            [content appendString:@"}\n\n"];
+
+            if([classModel.className isEqualToString:moduleName]){
+                [content appendString:@"+(id)parser:(NSData*)data{\n\n"];
+                
+                [content appendString:@"    JSONParser* parser=[[JSONParser alloc] init];\n"];
+                [content appendFormat:@"    parser.serialModelName=@\"%@\";\n",moduleName];
+                [content appendString:@"    [parser parse:data];\n"];
+                [content appendString:@"    return parser.result;\n"];
+                [content appendString:@"}\n\n"];
+                
+            }
+            
+            
             [content appendString:@"\n\n@end\n\n"];
             
         }

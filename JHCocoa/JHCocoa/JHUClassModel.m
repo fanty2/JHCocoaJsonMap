@@ -23,7 +23,7 @@
 
 -(void)addKey:(NSString*)key type:(JHUClassModelType)type{
     if(type==JHUClassModelString)
-        [properties setObject:@"@property(nonatomic,strong) NSString*" forKey:key];
+        [properties setObject:@"@property(nonatomic,copy) NSString*" forKey:key];
     else if(type==JHUClassModelDouble)
         [properties setObject:@"@property(nonatomic,assign) double" forKey:key];
     else if(type==JHUClassModelLongLong)
@@ -32,7 +32,7 @@
 }
 
 -(void)addKey:(NSString*)key class:(NSString*)className{
-    [properties setObject:[NSString stringWithFormat:@"@property(nonatomic,strong) %@*",className] forKey:key];
+    [properties setObject:[NSString stringWithFormat:@"@property(nonatomic,copy) %@*",className] forKey:key];
 }
 
 -(void)changeClassName:(NSString*)className newClassName:(NSString*)newClassName{

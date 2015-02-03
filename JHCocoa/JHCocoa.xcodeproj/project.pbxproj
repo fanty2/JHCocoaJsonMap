@@ -20,7 +20,6 @@
 		399A38851A660E2B005AFAE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399A38841A660E2B005AFAE7 /* CFNetwork.framework */; };
 		399A38871A660E31005AFAE7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 399A38861A660E31005AFAE7 /* libz.1.2.5.dylib */; };
 		399A388A1A661879005AFAE7 /* JHClassParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 399A38891A661879005AFAE7 /* JHClassParser.m */; };
-		39A8CFE31A7098B2007477E1 /* JHParserWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8CFE21A7098B2007477E1 /* JHParserWriter.m */; };
 		39A8D0541A70F1FB007477E1 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D0531A70F1FB007477E1 /* JSONParser.m */; };
 		39B85E331A679E7200E17F1C /* JHClassWriterDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B85E321A679E7200E17F1C /* JHClassWriterDictionary.m */; };
 		39B85E361A679F0700E17F1C /* JHClassWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B85E351A679F0700E17F1C /* JHClassWriter.m */; };
@@ -63,8 +62,6 @@
 		399A38861A660E31005AFAE7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		399A38881A661879005AFAE7 /* JHClassParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassParser.h; sourceTree = "<group>"; };
 		399A38891A661879005AFAE7 /* JHClassParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHClassParser.m; sourceTree = "<group>"; };
-		39A8CFE11A7098B2007477E1 /* JHParserWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHParserWriter.h; sourceTree = "<group>"; };
-		39A8CFE21A7098B2007477E1 /* JHParserWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHParserWriter.m; sourceTree = "<group>"; };
 		39A8D0521A70F1FB007477E1 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
 		39A8D0531A70F1FB007477E1 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
 		39B85E311A679E7200E17F1C /* JHClassWriterDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassWriterDictionary.h; sourceTree = "<group>"; };
@@ -119,8 +116,6 @@
 				399A38891A661879005AFAE7 /* JHClassParser.m */,
 				39B85E341A679F0700E17F1C /* JHClassWriter.h */,
 				39B85E351A679F0700E17F1C /* JHClassWriter.m */,
-				39A8CFE11A7098B2007477E1 /* JHParserWriter.h */,
-				39A8CFE21A7098B2007477E1 /* JHParserWriter.m */,
 			);
 			path = JHCocoa;
 			sourceTree = "<group>";
@@ -229,7 +224,6 @@
 				399A38761A660C70005AFAE7 /* ChamleonHTTPRequest.m in Sources */,
 				399A38771A660C70005AFAE7 /* ChamleonInputStream.m in Sources */,
 				399A38751A660C70005AFAE7 /* ChamleonFormDataRequest.m in Sources */,
-				39A8CFE31A7098B2007477E1 /* JHParserWriter.m in Sources */,
 				399A38731A660C70005AFAE7 /* ChamleonDataCompressor.m in Sources */,
 				394151F11A65104400AB1C39 /* JHUModel.m in Sources */,
 				394151DA1A64FBAC00AB1C39 /* main.m in Sources */,

@@ -18,7 +18,7 @@
 //要序列成的模块类名
 @property(nonatomic,strong) NSString* serialModelName;
 
-//要要
+//
 @property(nonatomic,strong) NSArray* serialSubModuleName;
 
 -(void)parse:(NSData*)data;

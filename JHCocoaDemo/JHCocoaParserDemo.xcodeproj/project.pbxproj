@@ -13,7 +13,6 @@
 		39A8D04D1A70EC7F007477E1 /* TestClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D0431A70EC7F007477E1 /* TestClassModel.m */; };
 		39A8D04E1A70EC7F007477E1 /* TestClassWithClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D0451A70EC7F007477E1 /* TestClassWithClassModel.m */; };
 		39A8D04F1A70EC7F007477E1 /* TestHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D0471A70EC7F007477E1 /* TestHttpModel.m */; };
-		39A8D0501A70EC7F007477E1 /* JHCocoaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A8D04A1A70EC7F007477E1 /* JHCocoaParser.m */; };
 		39DDF78F1A6FA46B009F37EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF78E1A6FA46B009F37EE /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +45,6 @@
 		39A8D0451A70EC7F007477E1 /* TestClassWithClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassWithClassModel.m; sourceTree = "<group>"; };
 		39A8D0461A70EC7F007477E1 /* TestHttpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHttpModel.h; sourceTree = "<group>"; };
 		39A8D0471A70EC7F007477E1 /* TestHttpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHttpModel.m; sourceTree = "<group>"; };
-		39A8D0491A70EC7F007477E1 /* JHCocoaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCocoaParser.h; sourceTree = "<group>"; };
-		39A8D04A1A70EC7F007477E1 /* JHCocoaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCocoaParser.m; sourceTree = "<group>"; };
 		39DDF78B1A6FA46B009F37EE /* JHCocoaParserDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JHCocoaParserDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DDF78E1A6FA46B009F37EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				39A8D03D1A70EC7F007477E1 /* model */,
-				39A8D0481A70EC7F007477E1 /* parser */,
 				39A8D0131A70D09A007477E1 /* JHCocoa_resource */,
 				39A8D0181A70D09A007477E1 /* JSONLibrary */,
 			);
@@ -109,15 +105,6 @@
 				39A8D0471A70EC7F007477E1 /* TestHttpModel.m */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		39A8D0481A70EC7F007477E1 /* parser */ = {
-			isa = PBXGroup;
-			children = (
-				39A8D0491A70EC7F007477E1 /* JHCocoaParser.h */,
-				39A8D04A1A70EC7F007477E1 /* JHCocoaParser.m */,
-			);
-			path = parser;
 			sourceTree = "<group>";
 		};
 		39DDF7821A6FA46B009F37EE = {
@@ -207,7 +194,6 @@
 				39A8D0271A70D09A007477E1 /* JSONParser.m in Sources */,
 				39A8D04C1A70EC7F007477E1 /* TestArrayClassModel.m in Sources */,
 				39A8D04F1A70EC7F007477E1 /* TestHttpModel.m in Sources */,
-				39A8D0501A70EC7F007477E1 /* JHCocoaParser.m in Sources */,
 				39DDF78F1A6FA46B009F37EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
