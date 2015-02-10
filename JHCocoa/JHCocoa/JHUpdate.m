@@ -65,7 +65,7 @@
         
         NSArray* array=[object objectForKey:@"url_map_model"];
         if(![array isKindOfClass:[NSArray class]]){
-            NSLog(@"url_map_model is not array json!");
+            NSLog(@"url_map_model %@ is not array json!",file);
             return NO;
         }
         
@@ -103,7 +103,7 @@
                     
                     
                     if(![self parserModel:model withData:[request responseData] isRootArray:&isRootArray]){
-                        NSLog(@"map_url %@ parser error!",model.map_url);
+                        NSLog(@"map_url %@ json parser error!",model.map_url);
                         return NO;
                     }
                     
@@ -111,7 +111,7 @@
                 else{
                     NSData* data=[NSData dataWithContentsOfFile:[path stringByAppendingPathComponent:model.map_url]];
                     if(![self parserModel:model withData:data isRootArray:&isRootArray]){
-                        NSLog(@"map_url %@ parser error!",model.map_url);
+                        NSLog(@"map_url %@ json parser error!",model.map_url);
                         return NO;
                     }
                 }
@@ -128,6 +128,7 @@
         NSLog(@"write root:%@",path);
         [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
     }
+    NSLog(@"create models  success!");
     return YES;
 }
 
@@ -136,6 +137,7 @@
     id object = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
 
     if(error!=nil){
+        NSLog(@"jaon error:%@",error);
         return NO;
     }
     
@@ -148,7 +150,6 @@
     
     NSString* path=[rootPath stringByAppendingPathComponent:@"model"];
     if(![[NSFileManager defaultManager] fileExistsAtPath:path]){
-        NSLog(@"write root:%@",path);
         [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
     }
     [classWriter writeClassDictionary:classParser.subClassCache moduleName:model.moduleName inPath:path];
