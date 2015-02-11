@@ -63,6 +63,12 @@
         
         isAsiHttpRequest=[[object objectForKey:@"ASIHTTPRequest"] boolValue];
         
+        
+        commentRequestHeader=[object objectForKey:@"commentRequestHeader"];
+        
+        commentPostData=[object objectForKey:@"commentPostData"];
+
+        
         NSArray* array=[object objectForKey:@"url_map_model"];
         if(![array isKindOfClass:[NSArray class]]){
             NSLog(@"url_map_model %@ is not array json!",file);
@@ -81,6 +87,9 @@
             if([model.method length]<1){
                 model.method=@"get";
             }
+            model.postData=[dict objectForKey:@"postData"];
+            model.requestHeader=[dict objectForKey:@"requestHeader"];
+
             [urls addObject:model];
             moduleNameIndex++;
         }
@@ -95,10 +104,27 @@
                     ChamleonFormDataRequest* request=nil;
                     if([[model.method uppercaseString] isEqualToString:@"POST"]){
                         request=[ChamleonFormDataRequest requestWithURL:[NSURL URLWithString:model.map_url]];
+                        
+                        if(commentPostData!=nil){
+                            [commentPostData enumerateKeysAndObjectsUsingBlock:^(id key,id value,BOOL* stop){
+                                [request setPostValue:value forKey:key];
+                            }];
+                        }
+                        if(model.postData!=nil){
+                            [model.postData enumerateKeysAndObjectsUsingBlock:^(id key,id value,BOOL* stop){
+                                [request setPostValue:value forKey:key];
+                            }];
+                        }
                     }
                     else{
                         request=[ChamleonHTTPRequest requestWithURL:[NSURL URLWithString:model.map_url]];
                     }
+                    if(commentRequestHeader!=nil){
+                        [commentRequestHeader enumerateKeysAndObjectsUsingBlock:^(id key,id value,BOOL* stop){
+                            [request addRequestHeader:key value:value];
+                        }];
+                    }
+                    
                     [request startSynchronous];
                     
                     

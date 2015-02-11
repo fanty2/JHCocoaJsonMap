@@ -17,6 +17,12 @@
     //是否使用asihttprequest， 暂没用
     BOOL isAsiHttpRequest;
     
+    //共有的request header
+    NSDictionary* commentRequestHeader;
+    
+    //共有的request post 参数
+    NSDictionary* commentPostData;
+    
     //选择要生成的路径
     NSString* rootPath;
 }

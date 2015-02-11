@@ -23,4 +23,11 @@
 //判断json 根是否为数组
 @property(nonatomic,assign) BOOL isRootArray;
 
+//request header
+@property(nonatomic,strong) NSDictionary* requestHeader;
+
+//request post 参数
+@property(nonatomic,strong) NSDictionary* postData;
+
+
 @end

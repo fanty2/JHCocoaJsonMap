@@ -1,5 +1,12 @@
 {
     "ASIHTTPRequest": true,
+    "commentRequestHeader":{
+    },
+    "commentPostData":{
+        "Key":"2343860663343433",
+        "HotVal":"u65lFG8wDQob37jpcYM0tKvJhf1HNCyr",
+        "Unionid":"696"
+    },
     "url_map_model": [
                       {
                       "map_url": "JHCocoa_resource/classWithClass.json",
@@ -21,6 +28,26 @@
                       "map_url": "http://115.28.1.119:18860/mam/api/mam/clients/update/ios/com.foreveross.bsl2/?ts=415173565.859007&appKey=9ac10bdf29e6cf120294703c95a60878",
                       "moduleName": "TestHttpModel",
                       "method": "get"
+                      },
+                      {
+                      "map_url": "http://cco.hotyi.cn/WXAPI/getAllArea",
+                      "moduleName": "AllAreaModel",
+                      "method": "post"
+                      },
+                      {
+                      "map_url": "http://cco.hotyi.cn/WXAPI/getProductList",
+                      "moduleName": "ProductListModel",
+                      "method": "post",
+                      "postData":{
+                        "SortType":"1",
+                        "categorieId":"0",
+                        "pageIndex":"1",
+                        "pageSize":"20"
+                      },
+                      "requestHeader":{
+                      
                       }
+                      }
+                      
                       ]
 }
